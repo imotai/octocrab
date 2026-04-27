@@ -229,6 +229,8 @@ pub enum Event {
     Connected,
     /// The pull request was converted to draft mode.
     ConvertToDraft,
+    /// The issue or pull request was converted from a draft.
+    ConvertedFromDraft,
     /// The issue was created by converting a note in a project board to an issue.
     ConvertedNoteToIssue,
     /// The issue was closed and converted to a discussion.
@@ -279,6 +281,8 @@ pub enum Event {
     Pinned,
     /// Not documented in the Github issue events documentation.
     ProjectV2ItemStatusChanged,
+    /// Not documented in the Github issue events documentation.
+    IssueCommentPinned,
     /// Not documented in the Github issue events documentation.
     IssueTypeAdded,
     /// Not documented in the Github issue events documentation.
